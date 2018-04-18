@@ -18,7 +18,7 @@ class Student
     FROM students
     SQL
     students = DB[:conn].execute(sql)
-    self.new_from_db(sql)
+    self.new_from_db(students)
     binding.pry
     # retrieve all the rows from the "Students" database
     # remember each row should be a new instance of the Student class
