@@ -96,9 +96,9 @@ class Student
 
   def self.first_student_in_grade_10
     sql = <<-SQL
-    SELECT id, grade
-    FROM students
-    WHERE grade = 10 AND id = 1
+    SELECT *
+    FROM studentss
+    WHERE grade = 10
     LIMIT 1
     SQL
 
