@@ -98,7 +98,7 @@ class Student
     sql = <<-SQL
     SELECT id, grade
     FROM students
-    WHERE grade = 10
+    WHERE grade = 10 AND id = 1
     LIMIT 1
     SQL
 
