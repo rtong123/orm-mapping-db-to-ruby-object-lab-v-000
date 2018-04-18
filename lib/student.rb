@@ -99,9 +99,10 @@ class Student
     SELECT *
     FROM students
     WHERE grade = 10
+    LIMIT 1
     SQL
 
-    DB[:conn].execute(sql,grade)
+    DB[:conn].execute(sql)
   end
 
   def self.all_students_in_grade_X(grade)
