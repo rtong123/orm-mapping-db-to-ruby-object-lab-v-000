@@ -90,7 +90,6 @@ class Student
      LIMIT ?
      SQL
     DB[:conn].execute(sql,grade)
-     end.first
   end
 
   def self.first_student_in_grade_10
