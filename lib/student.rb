@@ -71,7 +71,7 @@ class Student
     WHERE grade = 9
     SQL
       binding.pry
-  DB[:conn].execute(sql)
+  DB[:conn].execute(sql,grade)
   end
 
   def students_below_12th_grade
