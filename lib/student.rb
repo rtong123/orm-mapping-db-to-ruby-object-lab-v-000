@@ -89,7 +89,7 @@ class Student
      WHERE students.grade = ?
      LIMIT ?
      SQL
-    DB[:conn].execute(sql,grade)
+    DB[:conn].execute(sql,10,x)
   end
 
   def self.first_student_in_grade_10
